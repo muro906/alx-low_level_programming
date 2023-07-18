@@ -13,7 +13,7 @@ int main(void)
 	i = 0;
 	while (a[i] != '\0')
 	{
-		_putchar(a[0]);
+		_putchar(a[i]);
 		i++;
 	}
 	_putchar('\n');
