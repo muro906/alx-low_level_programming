@@ -11,7 +11,7 @@ int main(void)
 	int i;
 
 	i = 0;
-	while (i != '\0')
+	while (a[i] != '\0')
 	{
 		_putchar(a[0]);
 		i++;
