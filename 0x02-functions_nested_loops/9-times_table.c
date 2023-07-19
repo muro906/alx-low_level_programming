@@ -1,6 +1,7 @@
 #include"main.h"
-/***
- * times_table-prints the time table
+
+/**
+ * times_table- prints the timetable
  */
 void times_table(void)
 {
@@ -19,6 +20,8 @@ void times_table(void)
 			{
 				n = product / 10;
 				k = product % 10;
+				_putchar(',');
+				_putchar(':');
 				_putchar(n + '0');
 				_putchar(k + '0');
 			}
