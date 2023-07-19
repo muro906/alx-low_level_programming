@@ -21,7 +21,7 @@ void times_table(void)
 				n = product / 10;
 				k = product % 10;
 				_putchar(',');
-				_putchar(':');
+				_putchar(' ');
 				_putchar(n + '0');
 				_putchar(k + '0');
 			}
