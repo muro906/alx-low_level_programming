@@ -4,10 +4,10 @@
  * @h: address of the head node
  * Return: no of nodes
  */
-size_t print_list(const list_t *h)
+unsigned long print_list(const list_t *h)
 {
 	list_t *ptr = h;
-	size_t len = 0;
+	unsigned long len = 0;
 
 	if (ptr == NULL)
 		return (0);
