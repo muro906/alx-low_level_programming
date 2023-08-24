@@ -4,10 +4,10 @@
  * @h: address of the head node
  * Return: no of nodes
  */
-unsigned long print_list(const list_t *h)
+size_t print_list(const list_t *h)
 {
 	list_t *ptr = h;
-	unsigned long len = 0;
+	size_t len = 0;
 
 	if (ptr == NULL)
 		return (0);
@@ -16,10 +16,12 @@ unsigned long print_list(const list_t *h)
 		while (ptr != NULL)
 		{
 			if (ptr->str == NULL)
-				printf("[0] (nil)");
+				printf("[0] (nil)\n");
 			else
-				printf("[%d] %s", ptr->len, ptr->str);
-			ptr = ptr->next;
+			{
+				printf("[%u] %s\n", ptr->len, ptr->str);
+				ptr = ptr->next;
+			}
 			len++;
 		}
 	}
