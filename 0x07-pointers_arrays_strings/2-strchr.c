@@ -9,8 +9,8 @@ char *_strchr(char *s, char c)
 {
 	char *ptr = s;
 	int i = 0;
-	
-	for (i = 0; *s != '\0'; i++)
+
+	for (i = 0; *s <= '\0'; i++)
 	{
 		if (*s == c)
 		{
