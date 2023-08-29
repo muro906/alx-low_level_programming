@@ -3,6 +3,7 @@
  * string_nconcat-Concatenate two strings
  * @s1: The source string
  * @s2: the dest string
+ * @n: The number of bytes to be concatenated
  * Return: pointer to the new strin
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
