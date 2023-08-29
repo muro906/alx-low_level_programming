@@ -1,7 +1,7 @@
 #include"main.h"
 /**
  * _calloc-Allocates memory in blocks
- * @nmeb: Number of array members
+ * @nmemb: Number of array members
  * @size: Size of each block
  * Return: Void pointer
  */
@@ -9,7 +9,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *ptr;
 	
-	if(size == 0 || nmemb == 0)
+	if size == 0 || nmemb == 0)
 		return (NULL);
 
 	ptr = malloc(nmemb * size);
